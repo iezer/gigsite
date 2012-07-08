@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  main_url: MyString
+  access_url: MyString
+  geo_x: 1.5
+  geo_y: 1.5
+  ranking: 1
+  description: MyText
+
+two:
+  name: MyString
+  address: MyString
+  main_url: MyString
+  access_url: MyString
+  geo_x: 1.5
+  geo_y: 1.5
+  ranking: 1
+  description: MyText

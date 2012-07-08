@@ -1,4 +1,12 @@
 Gigsite::Application.routes.draw do
+  resources :performers
+
+  resources :events
+
+  resources :venues
+
+  resources :musicians
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
