@@ -14,6 +14,7 @@ class EventsController < ApplicationController
   # GET /events/1.json
   def show
     @event = Event.find(params[:id])
+    puts @event.musicians
 
     respond_to do |format|
       format.html # show.html.erb

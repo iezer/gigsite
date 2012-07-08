@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <b>Id:</b>
+  <%= @event.id %>
+</p>
+
+<p>
   <b>Venue:</b>
   <%= @event.venue_id %>
 </p>
@@ -25,6 +30,15 @@
   <%= @event.info_url %>
 </p>
 
+<p>
+	<p>Musicians:</b>
+		<ol>
+		<% @event.musicians.each do |m| %>	
+			<li><%= m.name %></li>
+		<% end %>	
+		</ol>
+
+</p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

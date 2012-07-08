@@ -35,6 +35,12 @@
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
+  <div class="field">
+		<% for musician in Musician.all %>
+  		<%= check_box_tag "event[musician_ids][]", musician.id, (@event.musicians.include? musician) %> <%= musician.name %>
+		<% end %>
+	</div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
