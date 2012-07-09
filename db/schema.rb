@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120708173312) do
+ActiveRecord::Schema.define(:version => 20120709033448) do
+
+  create_table "event_translations", :force => true do |t|
+    t.integer  "event_id"
+    t.string   "locale"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "event_translations", ["event_id"], :name => "index_event_translations_on_event_id"
+  add_index "event_translations", ["locale"], :name => "index_event_translations_on_locale"
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -58,6 +70,19 @@ ActiveRecord::Schema.define(:version => 20120708173312) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "venue_translations", :force => true do |t|
+    t.integer  "venue_id"
+    t.string   "locale"
+    t.string   "name"
+    t.text     "address"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "venue_translations", ["locale"], :name => "index_venue_translations_on_locale"
+  add_index "venue_translations", ["venue_id"], :name => "index_venue_translations_on_venue_id"
 
   create_table "venues", :force => true do |t|
     t.string   "name"

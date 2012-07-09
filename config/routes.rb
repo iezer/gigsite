@@ -6,7 +6,7 @@ Gigsite::Application.routes.draw do
   resources :venues
 
   scope "(:locale)", :locale => /en|ja/ do
-    resources :musicians
+    resources :musicians, :venues, :events
   end
 
   # The priority is based upon order of creation:
