@@ -1,18 +1,67 @@
 <h1>Listing events</h1>
 
+<h2>Coming Up</h2>
 <table>
   <tr>
-    <th>Name</th>
-    <th>Venue</th>
-    <th>Start</th>
-    <th>End</th>
-    <th>Info url</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>When?</th>
+		<th>What?</th>
+    <th>Where?</th>
+    <th>Who?</th>
   </tr>
 
-<% @events.each do |event| %>
+<% @future_events.each do |event| %>
+  <tr>
+		<td><%= event.start.strftime("%a %d %b, %Y")%><br>
+				<%= event.start.strftime("%H:%I")%>
+		 		- <%= event.end.strftime("%H:%I")%>
+		</td>
+    <td>
+			<% if event.info_url.size > 0 %>
+				<a href="<%= event.info_url %>"><%= event.name %></a>
+			<% else %>
+				<%= event.name %>
+				<% end %>
+			<br>
+			<%= event.description %>
+		</td>
+    <td>
+			<% if event.venue.main_url.size > 0 %>
+				<a href="<%= event.venue.main_url %>"><%= event.venue.name %></a>
+			<% else %>
+				<%= event.venue.name %>
+			<% end %>
+		</td>
+    <td>
+			<ul>
+				<% event.musicians.each do |musician| %>
+					<li>
+						<% if musician.url.size > 0 %>
+							<a href="<%= musician.url %>"><%= musician.name %></a>
+						<% else %>
+							<%= musician.name %>
+						<% end %>
+						<%= musician.instrument %>
+					</li>
+				<% end %>
+			</ul>	
+		</td>
+
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<h2>Past Gigs</h2>
+<table>
+  <tr>
+    <th>When?</th>
+    <th>Where?</th>
+    <th>Who?</th>
+  </tr>
+
+<% @past_events.each do |event| %>
   <tr>
     <td><%= event.name %></td>
     <td><%= event.venue_id %></td>

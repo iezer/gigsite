@@ -3,13 +3,18 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
-
+    @future_events = Event.where (["start >= ?", Time.now]);
+    @future_events = @future_events.sort_by &:start
+    
+    @past_events = Event.where (["start < ?", Time.now]);
+    @past_events = (@past_events.sort_by &:start).reverse
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
     end
   end
-
+  
   # GET /events/1
   # GET /events/1.json
   def show
