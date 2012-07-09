@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= link_to 'En', url_for( :locale => 'en' ) %>
+	<%= link_to 'Ja', url_for( :locale => 'ja' )  %>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
