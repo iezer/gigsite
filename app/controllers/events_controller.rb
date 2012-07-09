@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    #@events = Event.all
     @future_events = Event.where (["start >= ?", Time.now]);
     @future_events = @future_events.sort_by &:start
     
