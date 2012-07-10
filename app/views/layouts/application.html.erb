@@ -9,8 +9,19 @@
 <body>
 	<%= link_to 'En', url_for( :locale => 'en' ) %>
 	<%= link_to 'Ja', url_for( :locale => 'ja' )  %>
+	<br>
+	<%= link_to 'Events', url_for( :controller => '/events' ) %>
+	<%= link_to 'Venues', url_for( :controller => '/venues' )  %>
+	<%= link_to 'Musicians', url_for( :controller => '/musicians' )  %>
 
 	<%= yield %>
 
+	<% 	if current_user.try(:admin?) %>
+		<h2>Admin</h2>
+	<% end %>
+	<% 	if current_user.try(:admin?) %>
+		<h2><% current_user.email %></h2>
+		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+	<% end %>
 </body>
 </html>

@@ -1,17 +1,19 @@
 Gigsite::Application.routes.draw do
-  resources :performers
-
-  resources :events
-
-  resources :venues
-
+    
   scope "(:locale)", :locale => /en|ja/ do
+    devise_for :users
     resources :musicians, :venues, :events
   end
 
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  root :to => "events#index"
+#   root :to => {:action => 'index', :controller => '/events'}
+#  match 'admin' => 'devise/sessions#new'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -55,10 +57,6 @@ Gigsite::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
