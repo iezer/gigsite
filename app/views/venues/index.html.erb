@@ -24,13 +24,17 @@
     <td><%= venue.geo_y %></td>
     <td><%= venue.ranking %></td>
     <td><%= venue.description %></td>
-    <td><%= link_to 'Show', venue %></td>
-    <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
-    <td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+   	<td><%= link_to 'Show', venue %></td>
+		<% 	if current_user.try(:admin?) %>
+    	<td><%= link_to 'Edit', edit_venue_path(venue) %></td>
+    	<td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Venue', new_venue_path %>
+<% 	if current_user.try(:admin?) %>
+	<%= link_to 'New Venue', new_venue_path %>
+<% end %>

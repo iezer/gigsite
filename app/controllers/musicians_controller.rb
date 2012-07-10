@@ -1,4 +1,7 @@
 class MusiciansController < ApplicationController
+  
+  before_filter :authenticate_user!, :except => [:index, :show]
+  
   # GET /musicians
   # GET /musicians.json
   def index
@@ -20,7 +23,7 @@ class MusiciansController < ApplicationController
       format.json { render json: @musician }
     end
   end
-
+  
   # GET /musicians/new
   # GET /musicians/new.json
   def new

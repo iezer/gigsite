@@ -17,13 +17,17 @@
     <td><%= musician.instrument %></td>
     <td><%= musician.url %></td>
     <td><%= musician.member %></td>
-    <td><%= link_to 'Show', musician %></td>
-    <td><%= link_to 'Edit', edit_musician_path(musician) %></td>
-    <td><%= link_to 'Destroy', musician, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<td><%= link_to 'Show', musician %></td>
+		<% 	if current_user.try(:admin?) %>
+    	<td><%= link_to 'Edit', edit_musician_path(musician) %></td>
+    	<td><%= link_to 'Destroy', musician, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Musician', new_musician_path %>
+<% 	if current_user.try(:admin?) %>
+	<%= link_to 'New Musician', new_musician_path %>
+<% end %>

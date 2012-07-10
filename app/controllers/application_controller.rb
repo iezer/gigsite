@@ -14,4 +14,11 @@ class ApplicationController < ActionController::Base
     logger.debug "default_url_options is passed options: #{options.inspect}\n"
     { :locale => I18n.locale }
   end
+  
+  def authorize_admin
+    if not current_user.try(:admin?)
+      redirect_to root_path
+    end
+  end
+  
 end

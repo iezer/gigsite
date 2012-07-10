@@ -5,11 +5,7 @@ Gigsite::Application.routes.draw do
     resources :musicians, :venues, :events
   end
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  root :to => "events#index"
-#   root :to => {:action => 'index', :controller => '/events'}
-#  match 'admin' => 'devise/sessions#new'
+  match "/admin" => redirect("/users/sign_in")
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -63,4 +59,6 @@ Gigsite::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   match ':controller(/:action(/:id))(.:format)'
+  
+  root :to => "events#index"
 end

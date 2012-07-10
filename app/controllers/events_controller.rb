@@ -31,6 +31,7 @@ class EventsController < ApplicationController
   # GET /events/new
   # GET /events/new.json
   def new
+    authorize_admin
     @event = Event.new
 
     respond_to do |format|
@@ -41,12 +42,14 @@ class EventsController < ApplicationController
 
   # GET /events/1/edit
   def edit
+    authorize_admin
     @event = Event.find(params[:id])
   end
 
   # POST /events
   # POST /events.json
   def create
+    authorize_admin
     @event = Event.new(params[:event])
 
     respond_to do |format|
@@ -63,6 +66,7 @@ class EventsController < ApplicationController
   # PUT /events/1
   # PUT /events/1.json
   def update
+    authorize_admin
     @event = Event.find(params[:id])
 
     respond_to do |format|
@@ -79,6 +83,7 @@ class EventsController < ApplicationController
   # DELETE /events/1
   # DELETE /events/1.json
   def destroy
+    authorize_admin
     @event = Event.find(params[:id])
     @event.destroy
 

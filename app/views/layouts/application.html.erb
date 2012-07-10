@@ -19,7 +19,7 @@
 	<% 	if current_user.try(:admin?) %>
 		<h2>Admin</h2>
 	<% end %>
-	<% 	if current_user.try(:admin?) %>
+	<% 	if user_signed_in? %>
 		<h2><% current_user.email %></h2>
 		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 	<% end %>
