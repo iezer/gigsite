@@ -1,7 +1,9 @@
 class EventsController < ApplicationController
+
+  before_filter :authenticate_user!, :except => [:index, :show]
+  
   # GET /events
   # GET /events.json
-  
   def index
     #@events = Event.all
     @future_events = Event.where (["start >= ?", Time.now]);
@@ -31,7 +33,6 @@ class EventsController < ApplicationController
   # GET /events/new
   # GET /events/new.json
   def new
-    authorize_admin
     @event = Event.new
 
     respond_to do |format|
@@ -42,14 +43,12 @@ class EventsController < ApplicationController
 
   # GET /events/1/edit
   def edit
-    authorize_admin
     @event = Event.find(params[:id])
   end
 
   # POST /events
   # POST /events.json
   def create
-    authorize_admin
     @event = Event.new(params[:event])
 
     respond_to do |format|
@@ -66,7 +65,6 @@ class EventsController < ApplicationController
   # PUT /events/1
   # PUT /events/1.json
   def update
-    authorize_admin
     @event = Event.find(params[:id])
 
     respond_to do |format|
@@ -83,7 +81,6 @@ class EventsController < ApplicationController
   # DELETE /events/1
   # DELETE /events/1.json
   def destroy
-    authorize_admin
     @event = Event.find(params[:id])
     @event.destroy
 
@@ -91,5 +88,16 @@ class EventsController < ApplicationController
       format.html { redirect_to events_url }
       format.json { head :no_content }
     end
+  end
+  
+  def duplicate
+      @event = Event.find(params[:id])
+      @new_event = @event.dup
+      @new_event.save
+      respond_to do |format|
+        format.html # duplicate.html.erb
+        format.json { render json: @event }
+      end
+      
   end
 end
