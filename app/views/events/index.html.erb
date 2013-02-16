@@ -1,7 +1,15 @@
-<h1>Listing events</h1>
+<h2 align="center">The Ezer Swing Five Is</h2>
+<ul align="center">
+<% Musician.where(:member => true).each do |musician| %>
+		<li>
+				<%= render :partial => "name_with_url", :locals => {:name => musician.name, :url => musician.url } %>
+				<%= musician.instrument %>
+		</li>
+<% end %>
+</ul>
 
-<h2>Coming Up</h2>
-<table>
+<h2 align="center">Coming Up</h2>
+<table align="center">
   <tr>
     <th>When?</th>
 		<th>What?</th>
@@ -12,8 +20,8 @@
 <%= render :partial => "events_list", :locals => {:events => @future_events} %>
 </table>
 
-<h2>Past Gigs</h2>
-<table>
+<h2 align="center">Past Gigs</h2>
+<table align="center">
   <tr>
     <th>When?</th>
 		<th>What?</th>
