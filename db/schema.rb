@@ -64,13 +64,6 @@ ActiveRecord::Schema.define(:version => 20120710142048) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "performers", :force => true do |t|
-    t.integer  "event_id"
-    t.integer  "musician_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false
     t.string   "encrypted_password",     :default => "",    :null => false

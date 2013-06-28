@@ -35,6 +35,9 @@ Gigsite::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
   
+  #remove this and read http://guides.rubyonrails.org/asset_pipeline.html#what-is-fingerprinting-and-why-should-i-care
+#  config.assets.enabled = false
+  
   #needed by Devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.assets.initialize_on_precompile = false
