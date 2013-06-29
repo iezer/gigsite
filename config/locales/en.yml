@@ -6,3 +6,18 @@ en:
   venues:
     index:
       headline: "Venues"
+  date:
+    formats:
+      default: "%Y/%m/%d"
+      short: "%m/%d"
+      long: "%Y/%m/%d"
+
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      short: "%y/%m/%d %H:%M"
+      short_datetime: "%m/%d"
+      long_datetime: "%a %d %b, %Y"
+      long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
+
+  

@@ -13,8 +13,10 @@
 	
 </head>
 <body>
+	<div id="background"><%= image_tag "Background.jpg" %></div>
+	<div id="foreground"><%= image_tag "Foreground.png" %></div>
+	<div id="logo" alt="logo"><%= link_to image_tag("#{I18n.locale}/Logo.png"), url_for( :controller => 'static_pages', :action => 'home' ) %></div>
 	<div id="wrapper">
-		<div id="logo" alt="logo"><%= link_to "", url_for( :controller => '/events' ) %></div>
 		<div id="btnConcerts" alt="Concerts">
 			<%= link_to "", url_for( :controller => '/events' ) %>
 		</div>
@@ -34,7 +36,6 @@
 		</div>
 		<div id="fineline"></div>
 		<div id="box">	
-			<br>
 			<%= yield %>
 
 			<% 	if current_user.try(:admin?) %>

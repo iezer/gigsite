@@ -1,7 +1,7 @@
 <% events.each do |event| %>
   <tr>
 		<td>
-			<%= event.start.strftime("%a %d %b, %Y") %>
+			<%= l event.start, :format => :long_datetime %>
 			<br>
 				<%= event.start.strftime("%H:%I") %>
 		 		- <%= event.end.strftime("%H:%I") %>

@@ -36,15 +36,6 @@
 #btnFavorite a:hover {
 	background: transparent image-url("ja/Clubs_Hover.jpg") no-repeat;
 }
-	
-#logo a {
-	background: transparent image-url("ja/Logo.png") no-repeat;
-	position: absolute;
-	height: 64px;
-	width: 201px;
-	left: 20px;
-	top: 40px;
-}
 
 #English a {
 	position: absolute;
@@ -66,4 +57,12 @@
 	left: 940px;
 	top: 95px;
 	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
+}
+
+#logo img {
+	position: absolute;
+	height: 8%;
+	width: auto;
+	left: 20px;
+	top: 5%;
 }

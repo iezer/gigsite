@@ -1,0 +1,11 @@
+<% if event == nil %>
+	No upcoming gigs.
+<% else %>
+	<%= l event.start, :format => :short_datetime %>
+	<% if event.info_url.size > 0 %>
+		<a href="<%= event.info_url %>"><%= event.name %></a>
+	<% else %>
+		<a href="<% url_for( :controller => '/events' ) %>"><%= event.name %></a>
+	<% end %> @
+	<%= render :partial => "name_with_url", :locals => {:name => event.venue.name, :url => event.venue.main_url } %>
+<% end %>

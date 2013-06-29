@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
 
-  before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :authenticate_user!, :except => [:index, :show, :home]
   
   # GET /events
   # GET /events.json
@@ -98,6 +98,6 @@ class EventsController < ApplicationController
         format.html # duplicate.html.erb
         format.json { render json: @event }
       end
-      
   end
+
 end
