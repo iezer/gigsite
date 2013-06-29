@@ -8,8 +8,6 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
  */
 @charset "UTF-8";
 #BioPicture {
@@ -126,20 +124,37 @@ body {
 	background: transparent image-url("en/Clubs_Hover.jpg") no-repeat;
 }
 	
-#logo {
+#logo a {
+	background: transparent image-url("en/Logo.png") no-repeat;
 	position: absolute;
 	height: 38px;
 	width: 201px;
 	left: 20px;
 	top: 40px;
 }
-#Language {
+
+#English a {
 	position: absolute;
 	height: 21px;
 	width: 105px;
 	left: 880px;
 	top: 95px;
+	background: transparent image-url("en/Language_Hover.jpg") no-repeat;
 }
+
+#Japanese a {
+	position: absolute;
+	height: 21px;
+	width: 105px;
+	left: 940px;
+	top: 95px;
+	background: transparent image-url("ja/Language.jpg") no-repeat;
+}
+
+#Japanese a:hover {
+	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
+}
+
 #fineline {
 	position: absolute;
 	height: 1px;
@@ -185,29 +200,7 @@ body {
 	left: 196px;
 	top: 289px;
 }
-#FavoriteBody {
-	position: absolute;
-	height: 100px;
-	width: 422px;
-	left: 375px;
-	top: 130px;
-}
-#GoogleMap {
-	position: absolute;
-	height: 352px;
-	width: 402px;
-	left: 385px;
-	top: 250px;
-	z-index: 10;
-}
-#map {
-	position: relative;
-	width: 400px; 
-	height: 350px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-}
+
 #Shows {
 	position: absolute;
 	height: 300px;

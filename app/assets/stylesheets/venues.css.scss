@@ -1,3 +1,26 @@
 // Place all the styles related to the venues controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#box {
+	position: absolute;
+	height: 100px;
+	width: 600px;
+	left: 375px;
+	top: 130px;
+}
+#GoogleMap {
+	position: absolute;
+	height: 352px;
+	width: 402px;
+	left: 385px;
+	top: 250px;
+	z-index: 10;
+}
+#map {
+	position: relative;
+	width: 400px; 
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}

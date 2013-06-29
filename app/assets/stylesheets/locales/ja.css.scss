@@ -1,0 +1,69 @@
+#btnConcerts a {
+	background: transparent image-url("ja/Concerts.jpg") no-repeat;
+	position: absolute;
+	height: 28px;
+	width: 102px;
+	left: 340px;
+	top: 55px;
+}
+
+#btnConcerts a:hover  {
+	background: transparent image-url("ja/Concerts_Hover.jpg") no-repeat;
+}
+
+#btnClips a {
+	background: transparent image-url("ja/Clips.jpg") no-repeat;
+	position: absolute;
+	height: 28px;
+	width: 85px;
+	left: 472px;
+	top: 55px;
+}
+
+#btnClips a:hover {
+	background: transparent image-url("ja/Clips_Hover.jpg") no-repeat;
+}
+
+#btnFavorite a {
+	background: transparent image-url("ja/Clubs.jpg") no-repeat;
+	position: absolute;
+	height: 28px;
+	width: 208px;
+	left: 576px;
+	top: 55px;
+}
+
+#btnFavorite a:hover {
+	background: transparent image-url("ja/Clubs_Hover.jpg") no-repeat;
+}
+	
+#logo a {
+	background: transparent image-url("ja/Logo.png") no-repeat;
+	position: absolute;
+	height: 64px;
+	width: 201px;
+	left: 20px;
+	top: 40px;
+}
+
+#English a {
+	position: absolute;
+	height: 21px;
+	width: 105px;
+	left: 880px;
+	top: 95px;
+	background: transparent image-url("en/Language.jpg") no-repeat;
+}
+
+#English a:hover {
+	background: transparent image-url("en/Language_Hover.jpg") no-repeat;
+}
+
+#Japanese a {
+	position: absolute;
+	height: 21px;
+	width: 105px;
+	left: 940px;
+	top: 95px;
+	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
+}

@@ -2,28 +2,35 @@
 <html xml:lang="<%= I18n.locale || 'en' %>" lang="<%= I18n.locale || 'en'%>">
 <head>
 	<title>Gigsite</title>
-	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= stylesheet_link_tag "application", :media => "all" %>
+	<%= stylesheet_link_tag params[:controller] %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 	
-	<% if I18n.locale != :en %><%= stylesheet_link_tag "locales/" + I18n.locale.to_s %><% end %>
+	<% if I18n.locale != :en %>
+		<%= stylesheet_link_tag "locales/" + I18n.locale.to_s %>
+	<% end %>
 	
 </head>
 <body>
 	<div id="wrapper">
-		<div id="logo"><%= link_to image_tag("logo2.png", :size => "201x38", :alt=> "logo"), 'Events' %></div>
-		<div id="btnConcerts">
-			<%= link_to "", url_for( :controller => '/events' ), %>
+		<div id="logo" alt="logo"><%= link_to "", url_for( :controller => '/events' ) %></div>
+		<div id="btnConcerts" alt="Concerts">
+			<%= link_to "", url_for( :controller => '/events' ) %>
 		</div>
-		<div id="btnClips">
-			<%= link_to "", "Clips.html", :class => "btnClips" %>
+		<div id="btnClips" alt="Clips">
+			<%= link_to "", "Clips.html" %>
 		</div>
-		<div id="btnFavorite">
-			<%= link_to "", url_for( :controller => '/venues' ), :class => "btnFavorite" %>
+		<div id="btnFavorite" alt="Favourite Jazz Clubs">
+			<%= link_to "", url_for( :controller => '/venues' ) %>
 		</div>
 		<div id="Language">
-			<%= link_to image_tag("en/Language.jpg"), url_for( :locale => 'en' ) %>
-			<%= link_to image_tag("ja/Language.jpg"), url_for( :locale => 'ja' )  %>
+			<div id ="English">
+				<%= link_to "", url_for( :locale => 'en' ) %>
+			</div>
+			<div id="Japanese">
+				<%= link_to "", url_for( :locale => 'ja' )  %>
+			</div>
 		</div>
 		<div id="fineline"></div>
 		<div id="box">	
