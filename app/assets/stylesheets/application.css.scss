@@ -70,6 +70,7 @@ body,td,th {
 	position:absolute; 
 	width:auto; 
 	height:100%;
+	min-height: 700px;
 }
 
 #foreground img {
@@ -158,6 +159,21 @@ body,td,th {
 	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
 }
 
+#admin{
+	position: absolute;
+	top: 200px;
+	left: 800px;
+}
+
+#follow {
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	left: 265px;
+	top: 420px;
+	z-index: 10;
+}
+
 /*
 #fineline {
 	position: absolute;
@@ -175,14 +191,7 @@ body,td,th {
 	top: 498px;
 	z-index: 102;
 }
-#FollowMe {
-	position: absolute;
-	height: 157px;
-	width: 354px;
-	left: 515px;
-	top: 448px;
-	z-index: 10;
-}
+
 #VideoPlayer {
 	position: absolute;
 	height: 374px;

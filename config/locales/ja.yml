@@ -21,7 +21,7 @@ ja:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
       short: "%y/%m/%d %H:%M"
-      short_datetime: "%m月%d日(%a)"
+      short_datetime: "%m月%d日(%a) %H:%M"
       long_datetime: "%Y %m月 %d日 %A"
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
     am: "午前"
