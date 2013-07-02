@@ -20,7 +20,7 @@
 			<%= link_to "", url_for( :controller => '/events' ) %>
 		</div>
 		<div id="btnClips" alt="Clips">
-			<%= link_to "", "Clips.html" %>
+			<%= link_to "", url_for( :controller => 'static_pages', :action => 'clip' ) %>
 		</div>
 		<div id="btnFavorite" alt="Favourite Jazz Clubs">
 			<%= link_to "", url_for( :controller => '/venues' ) %>
@@ -29,6 +29,7 @@
 			<div id ="English">
 				<%= link_to "", url_for( :locale => 'en' ) %>
 			</div>
+			<div id="divider"></div>
 			<div id="Japanese">
 				<%= link_to "", url_for( :locale => 'ja' )  %>
 			</div>

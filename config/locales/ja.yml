@@ -3,6 +3,10 @@ ja:
   venues:
     index:
       headline: "Basho"
+      map_description: "私が過去に訪れたことのあるジャズクラブです。クリックしてみて下さい。 詳細情報を閲覧することができます"
+  static_pages:
+    clip:
+      headline: "  私の過去のパフォーマンスのミュージックとビデオです。是非、 聴いてみて下さい。"
   date:
     formats:
       default: "%Y/%m/%d"

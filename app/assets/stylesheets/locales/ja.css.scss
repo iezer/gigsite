@@ -37,10 +37,19 @@
 	background: transparent image-url("ja/Clubs_Hover.jpg") no-repeat;
 }
 
+#divider {
+	position: absolute;
+	height: 21px;
+	width: 22px;
+	left: 780px;
+	top: 95px;
+	background: transparent image-url("en/Divider.jpg") no-repeat;
+}
+
 #English a {
 	position: absolute;
 	height: 21px;
-	width: 105px;
+	width: 47px;
 	left: 730px;
 	top: 95px;
 	background: transparent image-url("en/Language_Hover.jpg") no-repeat;
@@ -53,8 +62,8 @@
 #Japanese a {
 	position: absolute;
 	height: 21px;
-	width: 105px;
-	left: 790px;
+	width: 50px;
+	left: 805px;
 	top: 95px;
 	background: transparent image-url("ja/Language.jpg") no-repeat;
 }

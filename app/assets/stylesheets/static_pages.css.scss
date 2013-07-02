@@ -26,3 +26,25 @@
 	font-size: 14px;
 	font-weight: bold;
 }
+
+#VideoPlayer {
+	position: absolute;
+	height: 374px;
+	width: 332px;
+	left: 0px;
+	top: 130px;
+}
+#AudioPlayer {
+	position: absolute;
+	height: 300px;
+	width: 180px;
+	left: 350px;
+	top: 130px;
+}
+#ClipsBody {
+	position: absolute;
+	height: 80px;
+	width: 280px;
+	left: 0px;
+	top: 30px;
+}

@@ -6,12 +6,15 @@ en:
   venues:
     index:
       headline: "Venues"
+      map_description: "Here's a map of the jazz clubs that I have been to in Tokyo. 35 so far. Click on the markers for more info. "
+  static_pages:
+    clip:
+      headline: "Here's a collection of audio and video recordings of my past performances."
   date:
     formats:
       default: "%Y/%m/%d"
       short: "%m/%d"
       long: "%Y/%m/%d"
-
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
