@@ -174,15 +174,17 @@ body,td,th {
 	z-index: 10;
 }
 
-/*
 #fineline {
 	position: absolute;
 	height: 1px;
-	width: 796px;
+	width: 100%;
+	max-width: 796px;
 	background-color: #000000;
 	left: 215px;
 	top: 85px;
 }
+
+/*
 #Email {
 	position: absolute;
 	height: 32px;
@@ -233,14 +235,6 @@ body,td,th {
 
 #twitter {
   padding-left: 15px;
-}
-
-#box {
-	position: absolute;
-	height: 100px;
-	width: 600px;
-	left: 375px;
-	top: 130px;
 }
 
 .delicious-banner a { font-size: 76% }
