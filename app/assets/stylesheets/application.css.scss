@@ -99,7 +99,7 @@ body,td,th {
 }
 
 #btnConcerts a {
-	background: transparent image-url("en/Schedule.jpg") no-repeat;
+	background: transparent url("en/Schedule.jpg") no-repeat;
 	position: absolute;
 	height: 28px;
 	width: 102px;
@@ -108,11 +108,11 @@ body,td,th {
 }
 
 #btnConcerts a:hover  {
-	background: transparent image-url("en/Schedule_Hover.jpg") no-repeat;
+	background: transparent url("en/Schedule_Hover.jpg") no-repeat;
 }
 
 #btnClips a {
-	background: image-url("en/Clips.jpg") no-repeat;
+	background: url("en/Clips.jpg") no-repeat;
 	position: absolute;
 	height: 28px;
 	width: 74px;
@@ -121,11 +121,11 @@ body,td,th {
 }
 
 #btnClips a:hover {
-	background: image-url("en/Clips_Hover.jpg") no-repeat;
+	background: url("en/Clips_Hover.jpg") no-repeat;
 }
 
 #btnFavorite a {
-	background: image-url("en/Clubs.jpg") no-repeat;
+	background: url("en/Clubs.jpg") no-repeat;
 	position: absolute;
 	height: 28px;
 	width: 208px;
@@ -134,7 +134,7 @@ body,td,th {
 }
 
 #btnFavorite a:hover {
-	background: image-url("en/Clubs_Hover.jpg") no-repeat;
+	background: url("en/Clubs_Hover.jpg") no-repeat;
 }
 
 #English a {
@@ -143,7 +143,7 @@ body,td,th {
 	width: 47px;
 	left: 730px;
 	top: 95px;
-	background: image-url("en/Language.jpg") no-repeat;
+	background: url("en/Language.jpg") no-repeat;
 }
 
 #divider {
@@ -152,7 +152,7 @@ body,td,th {
 	width: 22px;
 	left: 780px;
 	top: 95px;
-	background: image-url("en/Divider.jpg") no-repeat;
+	background: url("en/Divider.jpg") no-repeat;
 }
 
 #Japanese a {
@@ -161,11 +161,11 @@ body,td,th {
 	width: 50px;
 	left: 805px;
 	top: 95px;
-	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
+	background: transparent url("ja/Language_Hover.jpg") no-repeat;
 }
 
 #Japanese a:hover {
-	background: transparent image-url("ja/Language.jpg") no-repeat;
+	background: transparent url("ja/Language.jpg") no-repeat;
 }
 
 #admin{
