@@ -70,17 +70,16 @@ body,td,th {
 	position:absolute; 
 	width:auto; 
 	height:100%;
-	min-height: 700px;
+	min-height: 600px;
 }
 
 #foreground img {
-	height: 43%;
 	width: auto;
 	left: 8px;
-	bottom: -8px;
-	bottom-margin: 0px;
+	bottom: 0%;
 	position: absolute;
-	padding: 0px;
+	min-height: 240px;
+	height: 43%;
 }
 
 #logo img {
@@ -88,7 +87,8 @@ body,td,th {
 	height: 5%;
 	width: auto;
 	left: 20px;
-	top: 5%;
+	top: 40px;
+	min-height: 32px;
 }
 
 #wrapper {
@@ -141,22 +141,22 @@ body,td,th {
 	position: absolute;
 	height: 21px;
 	width: 105px;
-	left: 880px;
+	left: 730px;
 	top: 95px;
-	background: transparent image-url("en/Language_Hover.jpg") no-repeat;
+	background: transparent image-url("en/Language.jpg") no-repeat;
 }
 
 #Japanese a {
 	position: absolute;
 	height: 21px;
 	width: 105px;
-	left: 940px;
+	left: 790px;
 	top: 95px;
-	background: transparent image-url("ja/Language.jpg") no-repeat;
+	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
 }
 
 #Japanese a:hover {
-	background: transparent image-url("ja/Language_Hover.jpg") no-repeat;
+	background: transparent image-url("ja/Language.jpg") no-repeat;
 }
 
 #admin{

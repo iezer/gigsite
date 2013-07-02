@@ -26,12 +26,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  
-  gem 'gmaps4rails'
 end
 
 gem 'jquery-rails'
 
+gem 'gmaps4rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

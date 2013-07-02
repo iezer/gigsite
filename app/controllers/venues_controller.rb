@@ -6,6 +6,7 @@ class VenuesController < ApplicationController
   # GET /venues.json
   def index
     @venues = Venue.all
+    @venues_map = @venues.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb
