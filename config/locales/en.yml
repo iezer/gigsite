@@ -3,6 +3,11 @@
 
 en:
   hello: "Hello world"
+  application:
+    event_summary:
+      no_upcomming_gigs: "No Upcomming Gigs."
+    band_members:
+      ezer_swing_five: "The Ezer Swing Five Is"
   venues:
     index:
       headline: "Venues"

@@ -1,12 +1,4 @@
-<h2 align="center">The Ezer Swing Five Is</h2>
-<ul align="center">
-<% Musician.where(:member => true).each do |musician| %>
-		<li>
-				<%= render :partial => "name_with_url", :locals => {:name => musician.name, :url => musician.url } %>
-				<%= musician.instrument %>
-		</li>
-<% end %>
-</ul>
+<%= render :partial => "band_members", :locals => {:events => @future_events} %>
 
 <h2 align="center">Coming Up</h2>
 <table align="center">

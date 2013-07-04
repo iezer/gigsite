@@ -38,7 +38,7 @@ Gigsite::Application.configure do
   #remove this and read http://guides.rubyonrails.org/asset_pipeline.html#what-is-fingerprinting-and-why-should-i-care
 #  config.assets.enabled = false
   
-  config.assets.precompile += %w( static_pages.css.scss venues.css.scss musicians.css.scss events.css.scss )
+  config.assets.precompile += %w( static_pages.css.scss venues.css.scss musicians.css.scss events.css.scss sessions.css.scss )
   config.assets.precompile += %w( locales/*.css.scss )
     
   #needed by Devise

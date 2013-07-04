@@ -1,5 +1,5 @@
 <% if event == nil %>
-	No upcoming gigs.
+	<%= t '.no_upcoming_gigs' %>
 <% else %>
 	<%= l event.start, :format => :short_datetime %>
 	<% if event.info_url.size > 0 %>

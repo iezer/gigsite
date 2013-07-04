@@ -1,5 +1,10 @@
 ja:
   hello: "Konichiwa"
+  application:
+    event_summary:
+      no_upcomming_gigs: "予定がありません。"
+    band_members:
+      ezer_swing_five: "イーザ　スイング　５　メンバー"
   venues:
     index:
       headline: "Basho"

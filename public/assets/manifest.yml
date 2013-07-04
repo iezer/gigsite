@@ -57,11 +57,12 @@ logo4.png: logo4-d83ed49c5213f47adfb76158ca94ad5d.png
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
 verticalDropShadow.png: verticalDropShadow-20f47678c2c709fa2dd3877d0d1ca6fd.png
 application.js: application-53e6632e79c5a1f5b5c3b2cd45399c65.js
-application.css: application-d29d4687573c36cc37f68d7f92ed5c80.css
-events.css: events-ca2e310e562e1cc678aebca0cb2df041.css
+application.css: application-06dfa2bed048d5decd5a36719cb6f30e.css
+events.css: events-0ab374d631e064941d1da2ab35000170.css
 locales/en.css: locales/en-79fcb6e64afef50a96c1ccf8acb18806.css
 locales/ja.css: locales/ja-b712b07121657225b9ef98fde5e6a71f.css
 musicians.css: musicians-7270767b2a9e9fff880aa5de378ca791.css
+sessions.css: sessions-bc2ce42d7500ab667f4401eb88e30ee6.css
 static_pages.css: static_pages-e6ce295899f5bd7b1d420202a5b627bf.css
 venues.css: venues-fa4a6f5ad1cfb4940ba2286203c7f5f1.css
 jquery.min.map: jquery.min-00cb0c1709393f382013d1f037fc6cde.map

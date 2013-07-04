@@ -20,7 +20,7 @@ Gigsite::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  config.assets.precompile += %w( static_pages.css venues.css musicians.css events.css )
+  config.assets.precompile += %w( static_pages.css venues.css musicians.css events.css sessions.css )
   config.assets.precompile += %w( locales/*.css )
   
   # Defaults to nil and saved in location specified by config.assets.prefix

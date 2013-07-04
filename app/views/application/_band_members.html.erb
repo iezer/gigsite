@@ -1,0 +1,20 @@
+<h2 align="center">
+	<%= t '.ezer_swing_five' %>
+</h2>
+<table align="center">
+	<tr>
+		<td valign="middle">
+			<% count = 0 %>
+			<% band_members = Musician.where(:member => true) %>
+			<% band_members.each do |musician|  %>
+				<%= render :partial => "name_with_url", :locals => {:name => musician.name, :url => musician.url } %>
+				<%= musician.instrument %>
+				<br>
+				<% if count == band_members.size / 2 %>
+					</td><td>
+				<% end
+				count += 1
+			end %>
+		</td>
+	</tr>
+</table>
