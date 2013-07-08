@@ -1,7 +1,9 @@
 <%= stylesheet_link_tag 'gmaps4rails' %>
-<h2 align="center">
-<%= t '.map_description' %> 
-</h2>
+<div id="map-header">
+	<h2 align="center">
+		<%= t '.map_description' %> 
+	</h2>
+</div>
 
 <%= gmaps4rails(@venues_map) %>
 <%= yield :scripts %>

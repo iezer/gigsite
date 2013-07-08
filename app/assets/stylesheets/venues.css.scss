@@ -3,11 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #box {
-position: absolute;
-height: 100px;
-width: 450px;
-left: 375px;
-top: 120px;
+	position: absolute;
+	height: 600px;
+	width: 640px;
+	left: 375px;
+	top: 120px;
+	overflow: auto;
+	background-image: url('gradient.png');
+	z-index: 10;
+}
+
+#map-header {
+position: relative;
+height: 50px;
+width: 430px;
 }
 
 #map {
