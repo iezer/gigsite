@@ -10,4 +10,22 @@ class Event < ActiveRecord::Base
     future_events = future_events.sort_by &:start
     return future_events[0]
   end
+  
+  def create_duplicate
+    #amoeba is meant to do a deep copy for has many relationships
+    #but it's not working for musicians or translated fields so have
+    #to handle those manually
+    new_event = self.amoeba_dup   
+    new_event.musicians = self.musicians
+    
+    current_locale = I18n.locale
+    Gigsite::Application::SUPPORTED_LOCALES.each do |locale|
+      I18n.locale = locale
+      new_event.name = self.name
+      new_event.description = self.description
+      new_event.save
+    end
+    I18n.locale = current_locale
+    return new_event
+  end
 end

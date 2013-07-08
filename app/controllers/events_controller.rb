@@ -91,22 +91,8 @@ class EventsController < ApplicationController
   end
   
   def duplicate
-      @old_event = Event.find(params[:id])
-      
-      #amoeba is meant to do a deep copy for has many relationships
-      #but it's not working for musicians or translated fields so have
-      #to handle those manually
-      @event = @old_event.amoeba_dup   
-      @event.musicians = @old_event.musicians
-      
-      current_locale = I18n.locale
-      Gigsite::Application::SUPPORTED_LOCALES.each do |locale|
-        I18n.locale = locale
-        @event.name = @old_event.name
-        @event.description = @old_event.description
-        @event.save
-      end
-      I18n.locale = current_locale
+      old_event = Event.find(params[:id])
+      @event = old_event.create_duplicate
       
       respond_to do |format|
         format.html # duplicate.html.erb
