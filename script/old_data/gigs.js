@@ -1,29 +1,48 @@
-var upcomingGigs = [
 
-{	When: 'Wednesday, Feb. 15<br>doors at 7:30pm, 3 sets starting at 8pm<br>Y2500 inc. 2 drinks<br>Beginner Lesson', 
-	Where: '<b><a href="http://fiatcaffe.jp">FIAT SPACE</a> in Aoyama I-Chome</b><br><a href="../ENG/fiat.html">more info</a>',
-	Who: 'The Ezer Swing Five'
+var upcomingGigs = [
+{       When: 'Thursday, May 16<br>doors at 7:30pm, 3 sets starting at 8pm<br>Y1500',
+        Where: '<b><a href="http://fiatcaffe.jp">FIAT SPACE</a> in Aoyama I-Chome</b><br><a href="../ENG/fiat.html">more info</a>',
+        Who: 'The Ezer Swing Five w <a href="http://tapdance.co.il/EN/">Ron Freund on Tap</a>'
+}
+];
+
+var pastGigs = [
+{       When: 'Monday, Nov 19<br>doors at 7:30pm, 3 sets starting at 8pm<br>Y1500',
+        Where: '<b><a href="http://fiatcaffe.jp">FIAT SPACE</a> in Aoyama I-Chome</b><br><a href="../ENG/fiat.html">more info</a>',
+        Who: 'The Ezer Swing Five'
+},
+{       When: 'Monday, Jul. 16<br>7pm-10:30pm Y1500',
+        Where: '<a href="http://www.biervana.com">BierVana</a> in Akasaka<br>See <a href="biervana.html">event page</a> for more info.',
+        Who: 'The Ezer Swing Five - Specials Guests Tadashi Yanoo & Yuko Sumi from Aozora Romance Band'
+},
+{       When: 'Saturday, Jun. 23<br>6pm-10pm Y1500',
+        Where: '<a href="http://www.biervana.com">BierVana</a> in Akasaka<br>See <a href="biervana.html">event page</a> for more info.',
+        Who: 'The Ezer Swing Five'
+},
+{       When: 'Thursday, Apr. 26<br>doors at 7:30pm, 3 sets starting at 8pm<br>Y2500 inc. 2 drinks<br>Beginner Lesson',
+        Where: '<b><a href="http://fiatcaffe.jp">FIAT SPACE</a> in Aoyama I-Chome</b><br><a href="../ENG/fiat.html">more info</a>',
+        Who: 'The Ezer Swing Five'
+},
+{       When: 'Sunday, Dec. 20<br>6pm-10pm Y2500',
+        Where: '<a href="http://www.biervana.com">BierVana</a> in Akasaka<br>See <a href="biervana.html">event page</a> for more info.',
+        Who: 'The Ezer Swing Five'
+},
+{	When: 'Apr. 13-15, 2012', 
+	Where: '<b><a href="http://www.greatwallswingout.com">Great Wall Swingout</a></b><br> in Beijing',
+	Who: 'with Lulu Galore'
+},
+{	When: 'Apr. 6-8, 2012', 
+	Where: '<b><a href="http://www.campswingit.com">Camp Swing It</a></b><br> in Seoul, Korea',
+	Who: 'The Ezer Swing Five with Peter Vawter on Violin and Vocals'
 },
 {       When: 'Sunday, Mar. 25<br>6pm-10pm Y2500 w 1d',
         Where: '<a href="http://www.biervana.com">BierVana</a> in Akasaka<br>See <a href="biervana.html">event page</a> for more info.',
         Who: 'The Ezer Swing Five'
 },
-
-{	When: 'Apr. 6-8, 2012', 
-	Where: '<b><a href="http://www.campswingit.com">Camp Swing It</a></b><br> in Seoul, Korea',
-	Who: 'The Ezer Swing Five with Peter Vawter on Violin and Vocals'
+{	When: 'Wednesday, Feb. 15<br>doors at 7:30pm, 3 sets starting at 8pm<br>Y2500 inc. 2 drinks<br>Beginner Lesson', 
+	Where: '<b><a href="http://fiatcaffe.jp">FIAT SPACE</a> in Aoyama I-Chome</b><br><a href="../ENG/fiat.html">more info</a>',
+	Who: 'The Ezer Swing Five'
 },
-{       When: 'Thursday, April 26<br>doors at 7:30pm, 3 sets starting at 8pm<br>Y2500 inc. 2 drinks<br>Beginner Lesson',
-        Where: '<b><a href="http://fiatcaffe.jp">FIAT SPACE</a> in Aoyama I-Chome</b><br><a href="../ENG/fiat.html">more info</a>',
-        Who: 'The Ezer Swing Five'
-},
-{       When: 'Sunday, Dec. 11<br>6pm-10pm Y2500',
-        Where: '<a href="http://www.biervana.com">BierVana</a> in Akasaka<br>See <a href="biervana.html">event page</a> for more info.',
-        Who: 'The Ezer Swing Five'
-	}
-];
-
-var pastGigs = [
 {	When: 'Sunday, Jan. 29, 2012<br>6pm-10pm Y2000', 
 	Where: '<a href="http://www.dancingbus.com">Swing Fever by Dancing Bus</a> in Roppongi',
 	Who: 'The Ezer Swing Five'
