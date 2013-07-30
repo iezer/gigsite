@@ -18,7 +18,7 @@ Musician.delete_all
 	:name => "Fiat Space",
   :access_url => "http://fiatcaffe.jp/access",
 	:main_url		=> "http://fiatcaffe.jp",
-	:address		=> "Loge Aoyama, 1-4-5 Kita Aoyama, Minato-ku, Tokyo 107-0061")
+	:address		=> "１丁目-４−５ Kitaaoyama, Minato, Tokyo")
 
 @mike = Musician.create(
 		:name 				=> "Mike Zachernuk",

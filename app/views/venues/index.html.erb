@@ -5,7 +5,20 @@
 	</h2>
 </div>
 
-<%= gmaps4rails(@venues_map) %>
+<%= gmaps({ "map_options" => { 
+		"auto_zoom" => true,
+		"auto_adjust" => false,
+    "zoom" => 12,
+    "center_latitude" => 35.69,
+    "center_longitude" => 139.71
+  },
+  "markers" => {
+    "data" => @venues_map
+  }
+}
+) %>
+
+
 <%= yield :scripts %>
 
 <% 	if current_user.try(:admin?) %>

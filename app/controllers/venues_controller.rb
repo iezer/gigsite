@@ -1,3 +1,5 @@
+require 'active_support/core_ext/hash'
+
 class VenuesController < ApplicationController
   
   before_filter :authenticate_user!, :except => [:index, :show]
@@ -8,6 +10,23 @@ class VenuesController < ApplicationController
     @venues = Venue.all
     @venues_map = @venues.to_gmaps4rails
 
+    #TODO
+    #this doesn't work so setting in controller.
+    #should be able to do do gmaps(@gmaps_options)
+    #in view.
+    @gmaps_options = {
+      :map_options => {
+        :auto_zoom => true,
+        :auto_adjust => false,
+        :zoom => 12,
+        :center_latitude => 35.69,
+        :center_longitude => 139.71
+      },
+      :markers => {
+        :data => @venues_map
+      }
+    }
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @venues }
