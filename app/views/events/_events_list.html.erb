@@ -12,8 +12,7 @@
 			<% if event.description %>
 				<%= event.description.html_safe %>
 			<% end %>
-		</td>
-    <td>
+			<br>@
 			<%= render :partial => "name_with_url", :locals => {:name => event.venue.name, :url => event.venue.main_url } %>
 		</td>
     <td>

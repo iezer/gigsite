@@ -96,7 +96,7 @@ Musician.delete_all
 		:name		=> "Beer and Swing",
 		:start 	=> "Monday, Jul. 16, 2012 7pm +0900",
 		:end 		=> "Monday, Jul. 16, 2012 10:30pm +0900",
-		:description  => "In Akasaka, Y1500, Beginner Lesson at 9pm")
+		:description  => "In Akasaka, Y1500,<br>Beginner Lesson at 9pm")
 @biervana_event.venue = @biervana
 @biervana_event.info_url = "biervana.html"
 @biervana_event.musicians << @mike << @paul << @shingo << @yanoo << @yuko
@@ -106,7 +106,7 @@ Musician.delete_all
 		:name		=> "Beer and Swing",
 		:start 	=> "Saturday, Jun. 23, 2012 7pm +0900",
 		:end 		=> "Saturday, Jun. 23, 2012 10:30pm +0900",
-		:description  => "In Akasaka, Y1500, Beginner Lesson at 9pm")
+		:description  => "In Akasaka, Y1500<br>Beginner Lesson at 9pm")
 @biervana_event.venue = @biervana
 @biervana_event.info_url = "biervana.html"
 @biervana_event.musicians << @mike << @paul << @shingo
@@ -235,7 +235,7 @@ Musician.delete_all
 @e.save
 
 @fccj = Venue.create(
-  :name     => "Foreign Correspondents Club of Japan",
+  :name     => "Foreign Correspondents Club Japan",
   :main_url => "http://fccj.ne.jp",
   :address  => "Yurakucho 1-7-1, Chiyoda-ku, Tokyo"
 )
