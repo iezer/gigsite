@@ -13,7 +13,7 @@ class Venue < ActiveRecord::Base
   end
 
   def gmaps4rails_infowindow
-   "<h2><a href =\"#{main_url}\">#{name}</a></h2>
-    <h3>X #{geo_x} Y #{geo_y}</h3>"
+   "<h2><a href =\"#{main_url}\">#{name}</a></h2>"
+    # "<h3>X #{geo_x} Y #{geo_y}</h3>"
   end
 end
