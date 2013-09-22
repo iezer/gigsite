@@ -1,23 +1,24 @@
 class EventsController < ApplicationController
 
   before_filter :authenticate_user!, :except => [:index, :show, :home]
-  
+
   # GET /events
   # GET /events.json
   def index
     #@events = Event.all
-    @future_events = Event.where (["start >= ?", Time.now]);
-    @future_events = @future_events.sort_by &:start
-    
-    @past_events = Event.where (["start < ?", Time.now]);
-    @past_events = (@past_events.sort_by &:start).reverse
-    
+    # TODO turn into model scopes
+    @future_events = Event.where (["start_date >= ?", Time.now]);
+    @future_events = @future_events.sort_by &:start_date
+
+    @past_events = Event.where (["start_date < ?", Time.now]);
+    @past_events = (@past_events.sort_by &:start_date).reverse
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
     end
   end
-  
+
   # GET /events/1
   # GET /events/1.json
   def show
@@ -89,11 +90,11 @@ class EventsController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
   def duplicate
       old_event = Event.find(params[:id])
       @event = old_event.create_duplicate
-      
+
       respond_to do |format|
         format.html # duplicate.html.erb
         format.json { render json: @event }

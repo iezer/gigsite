@@ -2,8 +2,8 @@
 		<td>
 			<%= l event.start, :format => :long_datetime %>
 			<br>
-				<%= event.start.strftime("%H:%I") %>
-		 		- <%= event.end.strftime("%H:%I") %>
+				<%= event.start_date.strftime("%H:%I") %>
+		 		- <%= event.end_date.strftime("%H:%I") %>
 		</td>
     <td>
 			<%= render :partial => "name_with_url", :locals => {:name => event.name, :url => event.info_url } %>
@@ -23,7 +23,7 @@
 						<%= musician.instrument %>
 					</li>
 				<% end %>
-			</ul>	
+			</ul>
 		</td>
 		<% 	if current_user.try(:admin?) %>
     	<td><%= link_to 'Show', event %></td>

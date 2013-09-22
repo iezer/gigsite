@@ -1,30 +1,30 @@
 <%= render :partial => "band_members", :locals => {:events => @future_events} %>
 
 <% if @future_events.count > 0 %>
-	<h2 align="center">Coming Up</h2>
-	<table align="center">
-	  <tr>
-	    <th>When?</th>
-			<th>Where?</th>
-	    <th>Who?</th>
-	  </tr>
+  <h2 align="center">Coming Up</h2>
+  <table align="center">
+    <tr>
+      <th>When?</th>
+      <th>Where?</th>
+      <th>Who?</th>
+    </tr>
 
-	<%= render :partial => "events_list", :locals => {:events => @future_events} %>
-	</table>
+    <%= render :partial => "events_list", :locals => {:events => @future_events} %>
+  </table>
 <% end %>
 
 <h2 align="center">Past Gigs</h2>
 <table align="center">
   <tr>
     <th>When?</th>
-		<th>Where?</th>
+    <th>Where?</th>
     <th>Who?</th>
   </tr>
 
-<%= render :partial => "events_list", :locals => {:events => @past_events} %>
+  <%= render :partial => "events_list", :locals => {:events => @past_events} %>
 </table>
 <br />
 
-<% 	if current_user.try(:admin?) %>
-	<%= link_to 'New Event', new_event_path %>
+<% if current_user.try(:admin?) %>
+<%= link_to 'New Event', new_event_path %>
 <% end %>
