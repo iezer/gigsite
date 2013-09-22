@@ -1,36 +1,43 @@
-<div id="NewGig"> 
+<div id="NewGig">
 	<h3>
 		<%= render :partial => "event_summary", :locals => {:event => @next_event } %>
-	</h3> 
+	</h3>
 </div>
 <div id="BioHeader">
-	<h2>Check out video of us playing for the<br>2011 <a href="http://www.youtube.com/CampSwingIt#p/u/14/8GsDwP8kpEI">Korean Lindy Hop Championships</a></h2>
+	<h2></h2>
 </div>
 <div id="BioBody">
-	<p class="style2">Isaac Ezer is a jazz pianist, swing dancer, and software designer living in Tokyo.</p>
-	<p>He's taught <a href="http://en.wikipedia.org/wiki/Stride_piano">stride piano</a> to students in Nepal, <a href="http://en.wikipedia.org/wiki/Lindyhop">lindyhop</a> to dancers in Bali, and once jumped off a <a href="http://www.youtube.com/watch?v=bAVA8xg6qTE">168m bridge.</a>
+	<p class="style2">I'm a programmer living in New York City.</p>
+	<p>By day I work as a technologist at <b><a href="http://to.be">to.be</a></b>, by night I swing dance and sit in at jazz clubs around the city.</p>
+	<p>I recently lived in Tokyo and ran a jazz band that played at swing dance festivals all around Asia, including:
+	  <ul>
+	    <li><a href="http://www.campswingit.com">Camp Swing It in Seoul Korea</a></li>
+	    <li><a href="http://www.hkswingfestival.com">Hong Kong Swing Festival</a></li>
+	    <li><a href="http://www.greatwallswingout.com">Great Wall Swing Out</a></li>
+	    <li><a href="http://mechakuchaswing.main.jp/ole_2011/OLE2011.html">Osaka Lindy Exchange</a></li>
+	  </ul>
+	  Check out video of us playing for the <a href="http://www.youtube.com/CampSwingIt#p/u/14/8GsDwP8kpEI">Korean Lindy Hop Championships</a>.
 	</p>
-	<p>His passion is playing music for swing
-		dancers, as he's done in Toronto, Tokyo, Beijing, <a href="http://mechakuchaswing.main.jp/ole_2011/OLE2011.html">Osaka Lindy Exchange</a>, <a href="http://www.herrang.com">Herrang Dance Camp</a> in Sweden, <a href="http://www.campswingit.com">Camp Swing It</a> in Seoul, Korea, and <a href="http://www.hkswingfestival.com">Hong Kong Swing Festival</a>.
-	</p>
-	<p>Isaac works closely with <a href="http://www.dancingbus.com">Dancing Bus</a> to promote swing dancing.
-	</p>
-	<p>Isaac is also a pianist for <a href="http://tokyocomedy.com/spontaneous_confusion">Spontaneous Confabulation</a>, the resident improv comedy team of the <a href="http://tokyocomedy.com">Tokyo Comedy Store</a>.
-	</p>
-	<p>Isaac has recently launched his own line of bow ties <a href="http://www.boardwalkbowties.com">Boardwalk Bow Ties</a>.
-	</p>
+
+	<p>I used to back up improv comedians on the piano at the <a href="http://tokyocomedy.com/spontaneous_confusion">Tokyo Comedy Store</a>, and I once jumped off a <a href="http://www.youtube.com/watch?v=bAVA8xg6qTE">168m bridge in Nepal.</a></p>
+
 	<p>Email: <b><a href="mailto:me@isaacezer.com">me@isaacezer.com</a></b></p>
 </div>
 <div id="follow">
-	<!-- AddThis Follow BEGIN -->
-	<p>Follow me on</p>
-	<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
-	<a class="addthis_button_twitter_follow" addthis:userid="isaacezer"></a>
-	<a class="addthis_button_linkedin_follow" addthis:userid="isaacezer"></a>
-	<a class="addthis_button_compact" href="http://www.github.com/iezer">
-	         <img src="http://s7.addthis.com/static/btn/sm-plus.gif"
-	         width="16" height="16" border="0" alt="Share" /></a>
-	</div>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ce6baf107801e8"></script>
-	<!-- AddThis Follow END -->
+<!-- AddThis Follow BEGIN -->
+<p>Follow Me</p>
+<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+
+<a href="http://www.github.com/iezer"
+        class="addthis_button"
+        style="text-decoration:none;">
+        <%= image_tag 'github.png', :width => '38', :height =>'32' %>
+</a>
+  <a class="addthis_button_twitter_follow" addthis:userid="isaacezer"></a>
+  <a class="addthis_button_linkedin_follow" addthis:userid="isaacezer"></a>
+  <a class="addthis_button_tumblr_follow" addthis:userid="iezer"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523f2ff72a8af3db"></script>
+<!-- AddThis Follow END -->
+
 </div>

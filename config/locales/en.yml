@@ -5,7 +5,7 @@ en:
   hello: "Hello world"
   application:
     event_summary:
-      no_upcoming_gigs: "No Upcoming Gigs."
+      no_upcoming_gigs: ""
     band_members:
       ezer_swing_five: "The Ezer Swing Five Is"
   venues:
@@ -27,5 +27,3 @@ en:
       short_datetime: "%a %d %b %H:%M"
       long_datetime: "%a %d %b, %Y"
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
-
-  
