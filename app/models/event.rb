@@ -7,17 +7,21 @@ class Event < ActiveRecord::Base
   #return the next event, could be nil if nothing is scheduled
   def self.next_event
     future_events = self.where (["end >= ?", Time.now]);
-    future_events = future_events.sort_by &:start
-    return future_events[0]
+    if future_events
+      future_events = future_events.sort_by &:start
+      return future_events[0]
+    else
+      return nil
+    end
   end
-  
+
   def create_duplicate
     #amoeba is meant to do a deep copy for has many relationships
     #but it's not working for musicians or translated fields so have
     #to handle those manually
-    new_event = self.amoeba_dup   
+    new_event = self.amoeba_dup
     new_event.musicians = self.musicians
-    
+
     current_locale = I18n.locale
     Gigsite::Application::SUPPORTED_LOCALES.each do |locale|
       I18n.locale = locale
