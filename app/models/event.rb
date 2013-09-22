@@ -7,11 +7,11 @@ class Event < ActiveRecord::Base
   #return the next event, could be nil if nothing is scheduled
   def self.next_event
     future_events = self.where (["end >= ?", Time.now])
-    return if future_events
-      future_events = future_events.sort_by &:start
-      future_events[0]
+    if future_events
+      future_events = future_events.sort_by(&:start)
+      return future_events[0]
     else
-      nil
+      return nil
     end
   end
 
