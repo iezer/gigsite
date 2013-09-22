@@ -1,13 +1,14 @@
 Gigsite::Application.routes.draw do
-    
-  get "static_pages/home"
 
+  get "static_pages/home"
   get "static_pages/clip"
+  get 'static_pages/fiat'
+  get 'static_pages/biervana'
 
   scope "(:locale)", :locale => /en|ja/ do
     devise_for :users
     resources :musicians, :venues
-    
+
     resources :events do
       member do
         post 'duplicate'
@@ -16,10 +17,10 @@ Gigsite::Application.routes.draw do
   end
 
   match "/admin" => redirect("/users/sign_in")
-  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -69,6 +70,6 @@ Gigsite::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   #match ':controller(/:action(/:id))(.:format)'
-  
+
   root :to => "static_pages#home"
 end
