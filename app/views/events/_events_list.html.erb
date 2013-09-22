@@ -7,7 +7,7 @@
       - <%= event.end_date.strftime("%H:%I") %>
     </td>
     <td>
-      <%= render :partial => "name_with_url", :locals => {:name => event.name, :url => event.info_url } %>
+      <%= render :partial => "name_with_url", :locals => {:name => event.name, :url => url_for(event.info_url) } %>
       <br>
       <% if event.description %>
 	<%= event.description.html_safe %>

@@ -1,11 +1,11 @@
 Gigsite::Application.routes.draw do
 
-  get "static_pages/home"
-  get "static_pages/clip"
-  get 'static_pages/fiat'
-  get 'static_pages/biervana'
-
   scope "(:locale)", :locale => /en|ja/ do
+    get "static_pages/home"
+    get "static_pages/clip"
+    get 'static_pages/fiat'
+    get 'static_pages/biervana'
+
     devise_for :users
     resources :musicians, :venues
 

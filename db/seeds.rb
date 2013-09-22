@@ -110,7 +110,7 @@ Musician.delete_all
          :end_date 		=> "Monday, Jul. 16, 2012 10:30pm +0900",
          :description  => "In Akasaka, Y1500,<br>Beginner Lesson at 9pm")
 @biervana_event.venue = @biervana
-@biervana_event.info_url = "/static_pages/biervana"
+@biervana_event.info_url = "static_pages/biervana"
 @biervana_event.musicians << @mike << @paul << @shingo << @yanoo << @yuko
 @biervana_event.save
 @biervana_event.translations.create(:locale => "ja", :name => "Beer & Swing", :description => "２５００円　（１d)")
@@ -121,7 +121,7 @@ Musician.delete_all
          :end_date 		=> "Saturday, Jun. 23, 2012 10:30pm +0900",
          :description  => "In Akasaka, Y1500<br>Beginner Lesson at 9pm")
 @biervana_event.venue = @biervana
-@biervana_event.info_url = "/static_pages/biervana"
+@biervana_event.info_url = "static_pages/biervana"
 @biervana_event.musicians << @mike << @paul << @shingo
 @biervana_event.save
 @biervana_event.translations.create(:locale => "ja", :name => "Beer & Swing", :description => "２５００円　（１d)")

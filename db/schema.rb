@@ -105,9 +105,9 @@ ActiveRecord::Schema.define(:version => 20130922220526) do
     t.float    "geo_y"
     t.integer  "ranking"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.boolean  "gmaps"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.boolean  "gmaps",       :default => false
   end
 
 end
