@@ -1,0 +1,34 @@
+  <tr>
+		<td>
+			<%= l event.start, :format => :long_datetime %>
+			<br>
+				<%= event.start.strftime("%H:%I") %>
+		 		- <%= event.end.strftime("%H:%I") %>
+		</td>
+    <td>
+			<%= render :partial => "name_with_url", :locals => {:name => event.name, :url => event.info_url } %>
+			<br>
+			<% if event.description %>
+				<%= event.description.html_safe %>
+			<% end %>
+		</td>
+    <td>
+			<%= render :partial => "name_with_url", :locals => {:name => event.venue.name, :url => event.venue.main_url } %>
+		</td>
+    <td>
+			<ul>
+				<% event.musicians.each do |musician| %>
+					<li>
+						<%= render :partial => "name_with_url", :locals => {:name => musician.name, :url => musician.url } %>
+						<%= musician.instrument %>
+					</li>
+				<% end %>
+			</ul>	
+		</td>
+		<% 	if current_user.try(:admin?) %>
+    	<td><%= link_to 'Show', event %></td>
+    	<td><%= link_to 'Edit', edit_event_path(event) %></td>
+    	<td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			<td><%= link_to 'Duplicate', duplicate_event_path(event), :method => 'post' %></td>
+		<% end %>
+  </tr>
