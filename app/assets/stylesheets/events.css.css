@@ -1,0 +1,61 @@
+#apDiv1 {
+  position: absolute;
+  left: 318px;
+  top: 13px;
+  width: 437px;
+  height: 62px;
+  z-index: 1; }
+
+.style1 {
+  font-size: 12px; }
+
+#box {
+  height: 626px;
+  width: 700px;
+  left: 300px;
+  top: 150px;
+  position: absolute;
+  overflow: auto;
+  background-image: url("gradient.png");
+  z-index: 10; }
+
+#vertical {
+  position: absolute;
+  height: 463px;
+  width: 12px;
+  left: 188px;
+  top: 150px; }
+
+#horizontal {
+  position: absolute;
+  height: 13px;
+  width: 700px;
+  left: 200px;
+  top: 600px; }
+
+a:link {
+  color: #FD4B50;
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: none; }
+
+.underline {
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: #999999;
+  clip: rect(10px, auto, auto, auto);
+  line-height: 2px;
+  padding-top: 20px; }
+
+.spacing {
+  padding-top: 15px; }
+
+.boldWhen {
+  font-weight: bold; }

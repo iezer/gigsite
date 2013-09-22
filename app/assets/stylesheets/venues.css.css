@@ -1,0 +1,22 @@
+#box {
+  position: absolute;
+  height: 600px;
+  width: 640px;
+  left: 375px;
+  top: 120px;
+  overflow: auto;
+  background-image: url("gradient.png");
+  z-index: 10; }
+
+#map-header {
+  position: relative;
+  height: 50px;
+  width: 430px; }
+
+#map {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }

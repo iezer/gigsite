@@ -1,0 +1,196 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ */
+#BioPicture {
+  position: absolute;
+  height: 306px;
+  width: 234px;
+  left: 188px;
+  top: 235px;
+  z-index: 3; }
+
+#ExclamationMark {
+  position: absolute;
+  height: 52px;
+  width: 11px;
+  left: 400px;
+  top: 142px; }
+
+.style2 {
+  color: #FF4B50;
+  font-size: 20px;
+  font-weight: bold; }
+
+a:link {
+  color: #FD4B50;
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: none; }
+
+.style2 {
+  color: #FF4B50;
+  font-size: 20px;
+  font-weight: bold; }
+
+#BlogBody {
+  position: absolute;
+  height: 400px;
+  width: 660px;
+  left: 350px;
+  top: 120px;
+  z-index: 15;
+  overflow: auto; }
+
+body, td, th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #333333; }
+
+#background img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  min-height: 600px; }
+
+#foreground img {
+  width: auto;
+  left: 8px;
+  bottom: 0%;
+  position: absolute;
+  min-height: 240px;
+  height: 43%; }
+
+#logo img {
+  position: absolute;
+  height: 5%;
+  width: auto;
+  left: 20px;
+  top: 40px;
+  min-height: 32px; }
+
+#wrapper {
+  width: 1024px;
+  position: relative;
+  left: 0px;
+  top: 0; }
+
+#admin {
+  position: absolute;
+  top: 100px;
+  left: 1050px; }
+
+#follow {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  left: 265px;
+  top: 360px;
+  z-index: 10; }
+
+#fineline {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  max-width: 796px;
+  background-color: #000000;
+  left: 215px;
+  top: 85px; }
+
+/*
+#Email {
+	position: absolute;
+	height: 32px;
+	width: 126px;
+	left: 350px;
+	top: 498px;
+	z-index: 102;
+}
+
+#VideoPlayer {
+	position: absolute;
+	height: 374px;
+	width: 332px;
+	left: 490px;
+	top: 200px;
+}
+#AudioPlayer {
+	position: absolute;
+	height: 300px;
+	width: 180px;
+	left: 840px;
+	top: 200px;
+}
+#ClipsBody {
+	position: absolute;
+	height: 80px;
+	width: 280px;
+	left: 196px;
+	top: 289px;
+}
+
+#Shows {
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	left: 450px;
+	top: 150px;
+}
+#sidebar {
+	position: absolute;
+	height: 400px;
+	width: 205px;
+	left: 800px;
+	top: 127px;
+	z-index: 15;
+        padding: 2px;
+}
+
+#twitter {
+  padding-left: 15px;
+}
+
+.delicious-banner a { font-size: 76% }
+.delicious-posts {padding-left:15px;}
+.sidebar-title {padding-left:0px ! important;}
+.delicious-posts ul {list-style-type:inherit ! important;}
+*/
+/*
+.delicious-post a {font-size:normal;}
+
+.delicious-post { border-top: 1px solid #eee; padding: 0.25em;
+    font-size: 100% }
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+
+   .delicious-posts { margin: 1em; border: 2px solid #ddd; padding: 0.5em; width: 20em; 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px; }
+.delicious-posts ul, .delicious-posts li, .delicious-banner { margin: 0; padding: 0}
+.delicious-posts { margin: 1em; border: 2px solid #ddd; padding: 0.5em; width: 20em; font-family: sans-serif; }
+.delicious-odd { background-color: #f8f8f8 }
+.delicious-posts a:hover { text-decoration: underline }
+.delicious-posts a { text-decoration: none; color: #a15426; display: block; padding: 0.3em }
+.delicious-post a { color: #04a1ff } */
+/*
+.rss_box {}
+.rss_title {}
+.rss_items {padding-left:15px; margin:0; }
+.rss_item {border-top: 0px ! important;}
+.rss_item a {}
+.rss_date {}
+
+*/
