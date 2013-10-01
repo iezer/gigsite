@@ -60,11 +60,10 @@
 
 #logo img {
   position: absolute;
-  height: 8%;
-  width: auto;
+  height: 63px;
+  width: 183px;
   left: 20px;
-  top: 40px;
-  min-height: 46px; }
+  top: 40px; }
 
 #JapanBioHeader {
   position: relative; }
