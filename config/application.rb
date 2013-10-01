@@ -62,7 +62,5 @@ module Gigsite
     config.assets.initialize_on_precompile = false
 
     SUPPORTED_LOCALES = ['en', 'ja']
-
-    config.secret_key = 'e336ac23d84685925a9d750d898d4d20ff3e0fec1e56e8e62477df84c0f348d80e8b629c242951f0cbcecfbdf872ee4f6d672221b3f3aa017f84a85797420aeb'
   end
 end
