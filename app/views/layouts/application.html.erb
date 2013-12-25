@@ -5,9 +5,9 @@
 	<%= stylesheet_link_tag "application", controller_name %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
-	
+	<meta name="google-site-verification" content="3U0H3iiq7OcsshjHrPrzqzI0Kv_046XmxwBaSAFE9ds" />
 	<%= stylesheet_link_tag "locales/" + I18n.locale.to_s %>
-	
+
 </head>
 <body>
 	<div id="background"><%= image_tag "Background2.png" %></div>
@@ -32,10 +32,10 @@
 			</div>
 		</div>
 		<div id="fineline"></div>
-		<div id="box">	
+		<div id="box">
 			<%= yield %>
 		</div>
-		<div id="admin">	
+		<div id="admin">
 			<% 	if current_user.try(:admin?) %>
 			<h2>Admin</h2>
 			<% end %>
