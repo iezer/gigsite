@@ -13,15 +13,6 @@
 	<div id="background"><%= image_tag "Background2.png" %></div>
 	<div id="logo" alt="logo"><%= link_to image_tag("#{I18n.locale}/Logo.png"), url_for( :controller => 'static_pages', :action => 'home' ) %></div>
 	<div id="wrapper">
-		<div id="btnConcerts" alt="Concerts">
-			<%= link_to "", url_for( :controller => '/events' ) %>
-		</div>
-		<div id="btnClips" alt="Clips">
-			<%= link_to "", url_for( :controller => 'static_pages', :action => 'clip' ) %>
-		</div>
-		<div id="btnFavorite" alt="Favourite Jazz Clubs">
-			<%= link_to "", url_for( :controller => '/venues' ) %>
-		</div>
 		<div id="Language">
 			<div id ="English">
 				<%= link_to "", url_for( :locale => 'en' ) %>
